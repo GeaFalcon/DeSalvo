@@ -2308,6 +2308,7 @@ h6,
     visibility: visible;
     transform: translateY(0);
     overflow: hidden;
+    z-index: 2;
   }
   .js .mobile-toggle-wrapper.isOpen .mobile-menu-drawer {
     left: 0%!important;
@@ -3888,4 +3889,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   cursor: pointer;
   font-weight: bold;
   font-size: 22px;
+}
+.thb-quick-search {
+  display: none;
 }

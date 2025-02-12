@@ -355,22 +355,22 @@ class Header {
         }
       }
     });
-    toggle.querySelector('.mobile-toggle').addEventListener('click', (e) => {
-      setAnnouncementHeight(header);
-      if (toggle.classList.contains('active')) {
-        e.preventDefault();
-        document.body.classList.remove('overflow-hidden');
-        toggle.classList.remove('active');
-        this.closeAnimation(toggle);
+    // toggle.querySelector('.mobile-toggle').addEventListener('click', (e) => {
+    //   setAnnouncementHeight(header);
+    //   if (toggle.classList.contains('active')) {
+    //     e.preventDefault();
+    //     document.body.classList.remove('overflow-hidden');
+    //     toggle.classList.remove('active');
+    //     this.closeAnimation(toggle);
 
-      } else {
-        document.body.classList.add('overflow-hidden');
-        setTimeout(() => {
-          toggle.classList.add('active');
-        });
-      }
-      window.dispatchEvent(new Event('resize.resize-select'));
-    });
+    //   } else {
+    //     document.body.classList.add('overflow-hidden');
+    //     setTimeout(() => {
+    //       toggle.classList.add('active');
+    //     });
+    //   }
+    //   window.dispatchEvent(new Event('resize.resize-select'));
+    // });
 
     // Mobile Menu offset
     window.addEventListener('scroll', function() {
