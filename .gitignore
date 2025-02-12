@@ -1,0 +1,6 @@
+# ⚠️ Ignorar archivos de configuración con credenciales
+config.yml
+.env
+.env.local
+.env.development
+.env.production
